@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='calculator.css') }}">
+
+</head>
+
+<body>
+
+    <div class="calculator">
+        <h1>Calculator</h1>
+    </div>
+
+    <input id="output" class="output_Screen" type="text" readonly />
+
+    <div class="buttons">
+
+        <div class="numbers">
+        
+            <div class="num_Buttons">      
+        
+               <div class="number_Buttons_One_Seven">
+           
+                    <div class="number_1">
+                        <button>1</button>
+                    </div>
+            
+                    <div class="number_4">
+                        <button>4</button>
+                    </div>
+           
+                    <div class="number_7">
+                        <button>7</button>
+                    </div>
+                </div>
+
+                <div class="number_Buttons_Two_Eight">
+            
+                    <div class="number_2">
+                        <button>2</button>
+                    </div>
+            
+                    <div class="number_5">
+                        <button>5</button>
+                    </div>
+            
+                    <div class="number_8">
+                        <button>8</button>
+                        </div>
+            
+                </div>
+
+                 <div class="number_Buttons_Three_Nine">
+           
+                     <div class="number_3">
+                        <button>3</button>
+                    </div>
+            
+                    <div class="number_6">
+                     <button>6</button>
+                    </div>
+           
+                     <div class="number_9">
+                        <button>9</button>
+                    </div>
+
+                </div>
+    
+            </div>
+
+            <div class="lower_Row">
+                <div class="equal_Sign">
+            <button>=</button>
+                </div>
+
+                <div class="number_0">
+                <button>0</button>
+            </div>
+            </div>
+        
+        </div>
+
+        <div class="operators">
+            <div class="add">
+                <button>+</button>
+            </div>
+
+            <div class="subtract">
+                <button>-</button>
+            </div>
+
+            <div class="multiply">
+                <button>*</button>
+            </div>
+
+            <div class="division">
+                <button>/</button>
+            </div>
+
+        </div>
+
+        <div class="special_Char">
+            <button class="Clear">Clear</button>
+            <button class="AC">AC</button>
+        </div>
+
+<script src="{{ url_for('static', filename='calculator.js') }}"></script>
+
+</body>
+
+</html>
